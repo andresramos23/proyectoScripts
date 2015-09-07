@@ -1,0 +1,12 @@
+-- Conectado desde System
+CREATE USER proyecto1
+       IDENTIFIED BY proyecto1
+       DEFAULT TABLESPACE proyecto_data
+       QUOTA 10M ON proyecto_data
+       TEMPORARY TABLESPACE temp
+       QUOTA 5M ON system;
+
+       
+-------------------------------------------------
+create ROLE proyecto1
+       IDENTIFIED BY proyecto1;
