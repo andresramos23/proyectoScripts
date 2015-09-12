@@ -1,5 +1,6 @@
 alter table
    person
 drop
-   (hobbie_id,interest_id,languages_id);
+   (hobbie_id,interest_id,languages_id,winks_id);
+   
    
