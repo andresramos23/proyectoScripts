@@ -1,0 +1,322 @@
+*{
+	margin:0px;
+	padding:0px;
+	
+}
+
+#cuerpo{
+		background-image: url(images/wally.jpg);
+		background-repeat:no-repeat;
+		background-size:100% 100%;
+		background-attachment:fixed;		
+	}	
+
+
+
+
+/*La caja de toda  las cajas*/
+#allboxes{
+		margin-bottom: 200px;
+		width:98%;
+		height:500px;
+		border:none;
+		padding:10px;
+		margin:0px auto;
+		overflow:hidden;
+        display: block;
+}
+
+
+	
+	/*Inicio de fecto fade*/	
+	
+.Content{
+        /*background-color: rgba(255,011,255,0.1);*/
+    padding: 20px;
+        text-align: center;
+		width:100%;
+		height:450px;
+        -webkit-animation: fade 4s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 4s; /* Firefox < 16 */
+        -ms-animation: fadein 4s; /* Internet Explorer */
+         -o-animation: fadein 4s; /* Opera < 12.1 */
+            animation: fadein 4s;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/*Fin de fecto fade*/	
+	
+	
+
+/*Caja de titulo*/
+
+#header{
+	background-color: rgba(255,255,255,0.3);
+	width:100%;
+    padding-top:5px;
+	height:30px;
+	display: inline-table;
+    border-bottom:1px solid rgba(255,255,255,0.1);
+}
+
+
+
+#location{
+    height: 45px;
+}
+
+#Admin{
+    
+    width:150px;
+    height: 35px;
+    margin:0px auto;
+    border:none;
+    
+}
+#icon{
+    width: 55px;
+    height: 55px;
+}
+
+#labIcon{
+    color:white;
+	font-size:25px;
+	font-family:arial;
+}
+
+#titleP{
+	color:white;
+	font-size:15px;
+	font-family:arial;
+	font-style:italic;
+    text-align: center;
+    vertical-align: bottom;
+}
+	
+
+h2{
+		display:block;
+		padding-top:10px;
+		font-family: arial;
+		font-size:16px;
+		color:white;
+}
+
+
+	
+h1{
+		text-align:center;
+		font-family: arial;
+		font-size:20px;
+		color: #0080ff;
+		color:white;
+	}
+	
+	
+/*------ Panel con las opciones de arriba----*/
+
+#iconUP{
+        margin-top: 20px;
+        /*background-color: rgba(255,255,255,0.3);*/
+		width:550px;
+		height:200px;
+		margin:0px auto;
+		border:none;
+		border-radius: 10px;      
+        margin-bottom: 50px;
+}
+
+.arriba{
+		width:170px;
+        height: 100%;
+		margin:0px auto;
+		border:none;
+		
+		border-radius: 10px;
+        margin-bottom: 20px;
+        margin-right: 70px;
+        display: inline-block;
+        
+}
+
+.up:hover {-webkit-filter: brightness(140%); }
+
+.up{
+    width: 100px;
+    height: 100px;
+    padding: 20px;
+}
+
+
+input{
+    background: none;
+    padding-right: 35px;
+    padding-left: 35px;
+    border: none;
+    margin:0px auto;
+    font-family: arial;
+    font-size:16px;
+	color:white;
+    
+}
+/*--------------------------------------------*/
+
+
+/*------ Panel con las opciones de abajo----*/
+#iconDOWN{
+        margin-top: 20px;
+        /*background-color: rgba(255,255,255,0.3);*/
+		width:750px;
+		height:200px;
+		margin:0px auto;
+		border:none;
+		border-radius: 10px;           
+}
+
+
+.abajo{
+		width:150px;
+		margin:0px auto;
+		border:none;
+		padding:10px;
+		border-radius: 10px;
+        margin-right: 70px;
+        display: inline-block;
+}
+
+
+
+/*------ Panel modal -------*/
+p{
+    text-align: justify;
+}
+.modalDialog {
+	position: fixed;
+	font-family: Arial, Helvetica, sans-serif;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: rgba(0,0,0,0.8);
+	z-index: 99999;
+	opacity:0;
+	-webkit-transition: opacity 400ms ease-in;
+	-moz-transition: opacity 400ms ease-in;
+	transition: opacity 400ms ease-in;
+	pointer-events: none;
+}
+
+
+.modalDialog:target {
+	opacity:1;
+	pointer-events: auto;
+}
+
+.modalDialog > div {
+	width: 400px;
+	position: relative;
+	margin: 10% auto;
+	padding: 5px 20px 13px 20px;
+	border-radius: 10px;
+	background: #fff;
+	background: -moz-linear-gradient(#fff, #999);
+	background: -webkit-linear-gradient(#fff, #999);
+	background: -o-linear-gradient(#fff, #999);
+}
+
+
+/* boton Close o C*/
+#equis{
+	background: #606061;
+	color: #FFFFFF;
+	line-height: 25px;
+    right: 3px;
+    float: right;
+	position: absolute;
+	text-align: center;
+	top: 3px;
+	width: 24px;
+	text-decoration: none;
+	font-weight: bold;
+	-webkit-border-radius: 12px;
+	-moz-border-radius: 12px;
+	border-radius: 12px;
+	-moz-box-shadow: 1px 1px 3px #000;
+	-webkit-box-shadow: 1px 1px 3px #000;
+	box-shadow: 1px 1px 3px #000;
+}
+.close:hover { background: #00d9ff; }
+
+/*---------------------------------*/
+
+/*Propiedadesde la barra de menu*/
+
+
+ul, ol{
+	list-style:none;
+}
+
+.nav{
+    float: right;    
+}
+
+.nav li a{
+	background-color:none;
+	color:white;
+	text-decoration:none;
+	padding: 10px 15px;
+    height: 10px;
+	display:block;
+
+}
+
+.nav li a:hover{
+	background:rgba(255,255,255,0.2);	
+}
+
+
+.nav li ul{
+	display:none;
+	position:absolute;
+	min-width:140px;
+}
+
+.nav>li{
+	float:left;
+	
+}
+
+.nav li:hover > ul{
+	display:block;
+	
+}
+
+.nav li ul li{
+    text-align: left;
+	display:block;
+	position:relative;
+}
+
+.nav li ul li ul{
+	right:-160px;
+	top:0px;
+    text-align: left;
+}
+/*---------------------------------*/
+

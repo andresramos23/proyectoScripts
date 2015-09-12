@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="iso-8859-1" />
+	<meta name="description" content="Ejemplo HTML" />
+	<meta charset="keywords" content="HTML5, CSS3, Javascript" />
+	<title>Admin Profile</title>
+	<link rel="stylesheet" href="../css/Admin Profile.css"/>
+	
+	
+</head>
+
+<body id="cuerpo"> 
+	
+	<div id="header">
+        <div id="Admin">
+        <label id="labIcon" for="icon">Admin</label>
+        <img id="icon" src="../css/Admin IMG/Admin.png"/>
+        </div>
+        <ul class="nav">
+			<li><a href="#openModal" id="help" class="close">Help</a></li>			
+			<li><a href="Login.html">Exit</a></li>
+		</ul>
+        
+    </div>
+    
+    <div id="location">
+    
+    </div>
+	
+	
+	
+	<div id="allboxes">
+	<div class="Content">
+        
+    <div id="iconUP"> <!--Iconos con las opciones de arriba -->
+        <div class="arriba">
+            <img id="img1" class="up" src="../css/Admin IMG/new event.png">        
+            <input type="submit" value="New Event"/>
+        </div>
+    
+        <div class="arriba">
+            <img id="img2" class="up" src="../css/Admin IMG/Event log.png">
+            <input type="submit" value="Event Logs" onclick="location.href='../Pages/Some Info.html'"/>
+        </div>        
+    </div>
+    
+        
+    <!--Iconos con las opciones de abajo -->    
+    <div id="iconDOWN">
+        
+        <div class="abajo">
+            <img id="img3" class="up" src="../css/Admin IMG/top10.png">       
+            <input type="button" value="Top 10" />
+        </div>
+    
+        <div class="abajo">
+            <img id="img4" class="up" src="../css/Admin IMG/statistic.png">
+            <input type="submit" value="Statistics" onclick="location.href='../Pages/Some Info.html'"/>
+        </div>   
+        
+        <div class="abajo">
+            <img id="img5" class="up" src="../css/Admin IMG/wink.png">
+            <input type="button" value="Winks"/>
+        </div> 
+        
+    </div>
+        
+        
+        
+        
+        
+	<!--Inicio de caja  para panel modal :) -->        
+    <div id="openModal" class="modalDialog">
+        <div>
+		<a href="#close" id="equis" title="Close" class="close">X</a>
+		<h2>Help</h2>
+		<p>This is the space where you can find some tips to use your Admin profile.</p>
+		<p>It's just an example to show you how it works and let's see! :) 
+            Its cool and easy to perform a modal panel :3</p>
+	</div>
+
+		
+	</div>
+	</div>
+	
+	</div>
+	
+</body>

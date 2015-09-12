@@ -1,0 +1,188 @@
+*{
+	margin:0px;
+	padding:0px;
+	
+}
+
+#cuerpo{
+		background-image: url(images/wally.jpg);
+		background-repeat:no-repeat;
+		background-size:100% 100%;
+		background-attachment:fixed;		
+	}	
+
+	
+	/*Inicio de fecto fade*/	
+	
+.Content{
+        text-align: center;
+		width:100%;
+		height:360px;
+        -webkit-animation: fade 4s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 4s; /* Firefox < 16 */
+        -ms-animation: fadein 4s; /* Internet Explorer */
+         -o-animation: fadein 4s; /* Opera < 12.1 */
+            animation: fadein 4s;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/*Fin de fecto fade*/	
+	
+	
+
+/*Caja de titulo*/
+
+#first{
+	background-color: rgba(255,255,255,0.3);
+	width:100%;
+	height:50px;
+	padding-top:20px;
+	text-align:center;
+    border-bottom:1px solid rgba(255,255,255,0.1);
+}
+
+
+
+
+/*Caja de Ubicacion*/
+
+#location{
+    /*background-color: rgba(255,255,255,0.3);*/
+	width:100%;
+	height:50px;
+	padding-top:20px;
+	text-align:center;
+	margin-bottom:10px;
+}
+
+#titleP{
+		color:white;
+		font-size:30px;
+		font-family:arial;
+		font-style:italic;
+}
+	
+
+/*La caja de toda  las cajas*/
+#allboxes{
+        /*background-color: rgba(255,255,255,0.1);		*/
+		margin-top:100px;
+		width:92.5%;
+		height:350px;
+		border:none;
+		padding:50px;
+		margin:0px auto;
+		overflow:hidden;
+}
+
+
+
+/*Caja que contiene los campos que se deben rellenar para el login*/
+#wLogin{
+		background-color: rgba(255,255,255,0.3);
+		width:280px;
+		height:270px;
+		margin:0px auto;
+		border:none;
+		padding:10px;
+		border-radius: 10px;
+	}
+	
+
+label, h2{
+		display:block;
+		padding-top:10px;
+		font-family: arial;
+		font-size:16px;
+		color:white;
+	}
+#Find{
+        margin-bottom: 20px;
+}
+
+
+
+
+/*-----------------------------------------*/
+#tLogin{
+		margin:0 0 10px 25px;
+		font-family: arial;
+		font-size:12px;
+		color: white;
+		margin-bottom:25px;
+}
+
+#tLog, #tPass{
+		margin-left:28px;
+		font-family: arial;
+		font-size:12px;
+		text-align:left;
+		color: white;
+		margin-bottom:3px;
+		
+		
+	
+}
+	
+h1{
+		text-align:center;
+		font-family: arial;
+		font-size:20px;
+		color: #0080ff;
+		margin-bottom:20px;
+		color:white;
+	}
+	
+	
+	input[type=text],input[type=password]{
+		margin:0 0 0em 2em;
+		width: 200px;
+        height: 10px;
+		border: 0px;
+		padding:1em;
+		border-radius: 5px;
+		color:gray;
+		font-family:arial;
+		font-style:italic;
+		font-size:13px;
+		
+	}
+	input[type=submit]{
+        margin: 5px;
+        margin-top: 10px;
+		padding:5px;
+		background:#0080ff;
+		border:none;
+		color:white;
+		font-family: arial black;
+		font-size:13px;
+		border-radius:8px;
+		text-decoration:none;
+		float:right;	
+	}
+#btnlg{
+    margin-right: 15px;
+}
+	
+	input[type=submit]:hover, form a:hover{
+		background: #0040ef;
+		cursor:pointer;
+	}
+	
+	
