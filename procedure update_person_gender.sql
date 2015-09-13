@@ -1,4 +1,4 @@
-create or replace procedure update_person_gender(pPerson_id NUMBER,pGender NUMBER)
+create or replace procedure update_person_gender(pPerson_id NUMBER,pGender VARCHAR2)
 
 IS
 BEGIN

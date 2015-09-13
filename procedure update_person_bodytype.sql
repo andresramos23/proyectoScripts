@@ -1,9 +1,9 @@
-create or replace procedure update_person_firstName(pPerson_id NUMBER,pFirstName VARCHAR2)
+create or replace procedure update_person_bodytype(pPerson_id NUMBER,pBodyType NUMBER)
 
 IS
 BEGIN
  UPDATE PERSON
- set first_name = pFirstName
+ set bodytype_id = pBodyType
  WHERE person_id = pPerson_Id;
 
 

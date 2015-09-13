@@ -1,9 +1,9 @@
-create or replace procedure update_person_firstName(pPerson_id NUMBER,pFirstName VARCHAR2)
+create or replace procedure update_person_birthdate(pPerson_id NUMBER,pBirthDate DATE)
 
 IS
 BEGIN
  UPDATE PERSON
- set first_name = pFirstName
+ set birth_date = pBirthDate
  WHERE person_id = pPerson_Id;
 
 

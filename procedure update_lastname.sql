@@ -1,4 +1,4 @@
-create or replace procedure update_person_lastName(pPerson_id NUMBER,pLastName NUMBER)
+create or replace procedure update_person_lastName(pPerson_id NUMBER,pLastName VARCHAR2)
 
 IS
 BEGIN

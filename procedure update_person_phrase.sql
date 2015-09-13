@@ -1,4 +1,4 @@
-create or replace procedure update_person_phrase(pPerson_id NUMBER,pPhrase NUMBER)
+create or replace procedure update_person_phrase(pPerson_id NUMBER,pPhrase VARCHAR2)
 
 IS
 BEGIN

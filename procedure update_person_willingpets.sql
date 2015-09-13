@@ -1,9 +1,9 @@
-create or replace procedure update_person_firstName(pPerson_id NUMBER,pFirstName VARCHAR2)
+create or replace procedure update_person_willingpets(pPerson_id NUMBER,pWillingPets NUMBER)
 
 IS
 BEGIN
  UPDATE PERSON
- set first_name = pFirstName
+ set willing_pets = pWillingPets
  WHERE person_id = pPerson_Id;
 
 
