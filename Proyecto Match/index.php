@@ -50,12 +50,50 @@
 			});
 	</script>
 	<div id="welcome">
-		<h1>Welcome to Looking</h1>
+		<h1 id="tituloW">Welcome to Looking</h1>
 		<form>
-			<a id="start" href="Pages/Login.html">Let's Start</a>
+			<a id="start" href="#openModal">Let's Start</a>
 		</form>
 		
 	</div>
+    
+    <!--Inicio de caja  para panel modal :) -->        
+    <div id="openModal" class="modalDialog">
+        <div>
+		<div class="Content">
+        <a href="#close" id="equis" title="Close" class="close">X</a> 
+            
+        <h2 id="Find">Find your perfect match, just keep Looking!</h2>
+	<!--Inicio de caja  info personal -->
+	<div id="wLogin">
+        
+	<h1>Login</h1>
+	<h2 id="tLogin">Enter your acount details to continue</h2>
+	
+	<h2 id="tLog">Username:</h2>
+	<form>
+		<input type="text" name="userName" placeholder="Enter your username"/>
+	</form>
+	<h2 id="tPass">Password:</h2>
+	<form>
+		<input type="password" name="userPass" placeholder="Enter your password" />
+	</form>
+	<!-- Botones del div -->
+		<input onclick="location.href='Pages/User Profile.html'" id="btnlg" type="submit"  name="btnLogin" value="Login"/>
+
+		<input type="submit"  name="btnLogin" value="Register" onclick="location.href='Pages/Some Info.html'" />
+
+
+		
+	</div>
+	</div>
+	</div>
+
+		
+	</div>
+    
+    
+    
 </body>
 
 

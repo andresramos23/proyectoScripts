@@ -5,7 +5,7 @@
 
 body{
 margin-top:50px;
-	background-image: url(wally.jpg);
+	background-image: url(wall3.jpg);
 	background-color:black;
 	background-repeat:no-repeat;
 	background-size:100% 100%;
@@ -17,9 +17,26 @@ margin-top:50px;
 	width:45%;
 	max-width:1000px;
 	margin:20px auto;
+    border-radius: 30px;
+}
+
+img{
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+}
+
+#tituloW{
+    text-shadow: 2px 2px 16px rgba(011,100,255,1);
 }
 
 .slides{
+    -webkit-box-shadow: 1px 1px 37px 11px rgba(011,100,255,0.5);
+    -moz-box-shadow: 1px 1px 37px 11px rgba(011,100,255,0.5);
+    box-shadow: 1px 1px 37px 11px rgba(011,100,255,0.5);
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
 	width:100%;
 }
 
@@ -29,7 +46,7 @@ margin-top:50px;
 
 
 .slidesjs-pagination{
-	background-color: rgba(120,40,70,0.3);
+	background: rgba(011,100,255,0.3);
 	list-style:none;
 	overflow:hidden;
 	opacity:1
@@ -46,18 +63,19 @@ margin-top:50px;
 	font-family: arial black;
 	text-decoration:none;
 	font-size:16px;
+
 }
 
 .slidesjs-pagination li a:hover{
-	background:rgb(120,50,30);
+	background: rgba(040,150,255,0.5);
 }
 
 .slides .active{
-	background:rgb(120,50,30);
+	background:  rgba(040,150,255,0.5);;
 }
 
 .slidesjs-navigation{
-	background-color: rgba(120,40,70,0.3);
+	background-color: rgba(040,150,255,0.5);
 	color:white;
 	font-family: arial black;
 	text-decoration:none;
@@ -75,24 +93,231 @@ margin-top:50px;
 	font-family:italic arial black;
 }
 
+
+
+#tituloW{
+    filter:Glow(color=green);
+}
+
 #start{
 		margin:0px auto;
 		margin-top:10px;
 		padding:5px;
-		background-color: rgba(200,70,100,0.3);
+		background-color: rgba(255,255,255,0.3);
 		color:white;
 		font-family: arial black;
 		font-size:14px;
-		border-radius:3px;
+		border-radius:30px;
 		text-decoration:none;	
 	}
 #start:hover{
-	background:rgb(120,50,30);
+    width: 80px;
+    height: 30px;
+    font-size: 17px;
 }
+
 
 h1{
 	margin-bottom:10px;
 }
+
+
+/*------ Panel modal -------*/
+p{
+    text-align: justify;
+}
+.modalDialog {
+	position: fixed;
+	font-family: Arial, Helvetica, sans-serif;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: rgba(0,0,0,0.9);
+	z-index: 99999;
+	opacity:0;
+	-webkit-transition: opacity 400ms ease-in;
+	-moz-transition: opacity 400ms ease-in;
+	transition: opacity 400ms ease-in;
+	pointer-events: none;
+    
+}
+
+
+.modalDialog:target {
+	opacity:1;
+	pointer-events: auto;
+}
+
+.modalDialog > div {
+	width: 400px;
+	position: relative;
+	margin: 10% auto;
+	padding: 5px 20px 13px 20px;
+	border-radius: 10px;
+
+}
+
+
+/* boton Close o C*/
+#equis{
+	background: #F00;
+	color: #FFFFFF;
+	line-height: 25px;
+    right: 3px;
+    float: right;
+	position: relative;
+	text-align:center;
+	top: 3px;
+	width: 24px;
+	text-decoration: none;
+	font-weight: bold;
+	-webkit-border-radius: 12px;
+	-moz-border-radius: 12px;
+	border-radius: 12px;
+	-moz-box-shadow: 1px 1px 3px #F00;
+	-webkit-box-shadow: 1px 1px 3px #F00;
+	box-shadow: 1px 1px 3px #F00;
+}
+
+#equis:hover{
+    -webkit-box-shadow: 1px 1px 37px 11px #F00;
+        -moz-box-shadow: 1px 1px 37px 11px #F00;
+        box-shadow: 1px 1px 37px 11px #F00;
+}
+
+
+/*---------------------------------*/
+
+.Content{
+        text-align: center;
+		width:100%;
+		height:360px;
+        -webkit-animation: fade 2s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 2s; /* Firefox < 16 */
+        -ms-animation: fadein 2s; /* Internet Explorer */
+         -o-animation: fadein 2s; /* Opera < 12.1 */
+            animation: fadein 2s;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/*Fin de fecto fade*/	
+
+
+/*Caja que contiene los campos que se deben rellenar para el login*/
+#wLogin{
+		background-color: rgba(011,100,220,0.2);
+		width:280px;
+		height:270px;
+		margin:0px auto;
+		border:none;
+		padding:10px;
+		border-radius: 10px;
+    
+	}
+	
+
+
+
+label, h2{
+		display:block;
+		padding-top:10px;
+		font-family: arial;
+		font-size:16px;
+		color:white;
+	}
+#Find{
+        font-size: 15px;
+        margin-bottom: 20px;
+}
+
+
+
+
+/*-----------------------------------------*/
+#tLogin{
+		margin:0 0 10px 25px;
+		font-family: arial;
+		font-size:12px;
+		color: white;
+		margin-bottom:25px;
+}
+
+#tLog, #tPass{
+		margin-left:28px;
+		font-family: arial;
+		font-size:12px;
+		text-align:left;
+		color: white;
+		margin-bottom:3px;
+		
+		
+	
+}
+	
+h1{
+		text-align:center;
+		font-family: arial;
+		font-size:20px;
+		color: #0080ff;
+		margin-bottom:20px;
+		color:white;
+	}
+	
+	
+	input[type=text],input[type=password]{
+		margin:0 0 0em 2em;
+		width: 200px;
+        height: 10px;
+		border: 0px;
+		padding:1em;
+		border-radius: 5px;
+		color:gray;
+		font-family:arial;
+		font-style:italic;
+		font-size:13px;
+		
+	}
+	input[type=submit]{
+        margin: 5px;
+        margin-top: 10px;
+		padding:5px;
+		background:rgba(011,120,255,0.8);
+		border:none;
+		color:white;
+		font-family: arial black;
+		font-size:13px;
+		border-radius:8px;
+		text-decoration:none;
+		float:right;	
+	}
+#btnlg{
+    margin-right: 15px;
+}
+	
+	input[type=submit]:hover, form a:hover{
+		background: rgba(011,120,255,1);
+	}
+
+
+
+
 
 
 
